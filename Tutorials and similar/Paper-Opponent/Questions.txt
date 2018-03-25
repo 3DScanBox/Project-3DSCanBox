@@ -1,0 +1,36 @@
+"Good" conceptual Questions:
+
+1.) One of the main points of this method is that they incorporate geometric reasoning/knowledge of the stereo problem when building the cost volume, instead of using deep-learning as a "black-box". How did they do this and what insights ? (how does the cost-volume work?)
+
+2.) For the KITTI-Dataset they use a pre-trained model (scene-flow Data set), since the KITTI_Dataset is small (200 images). Do you have any Idea how similar these two Data sets are ?
+Would it work if they were showing completly different scenes ? (e.g. trained on indoor with people, evaluated for outdoor scenes with cars)
+Follow-up: for real-life application would we need to always train the algorithm on the specific scene it is used for ? (and make sure that the obtained scene does not differ too much from the trained scene). 
+
+3.) In the paper table 3(b): Do you know why the DispNetC outperforms this method for the foreground pixels? (Dispnet uses a 1-D correlation layer along the disparity line and should therefore not be able to incorporate context that well).
+Follow up: Is this method not that suited for very dynamic scenes (e.g. a lot of moving objects /foreground objects).
+
+4.) How could this method be improved ? What future work can/will be done on Deep Stereo Vision ?
+
+
+"Detailed/picky" questions/ Questions we already know the answer to:
+
+5.) What's the difference between the two cost-volumes constructed ? Why do we need 2 cost-volumes which are then processed seperately? 
+
+6.) Why do they only use a randomly located crop of the input image & not the entire image when training ? 
+Answer: less overfitting/more flexible learning process
+
+7.) Why do they use the L1 norm in the Loss-function and not L2 norm (mean-squared error), which is more commonly used ?
+Answer: To achieve sub-pixel accuracy the L1-norm is better suited (squaring numbers of size <1 yields smaller errors). 
+
+
+Questions that show that we did not understand the paper too well:
+
+8.) Is the dimension F of size 32 ? Do we have 32 feature-layers ? 
+Answer: Yes, if not than we did not understand anything in this paper >_<
+
+9.) Where does Color drop out ?  
+Answer: The convolution-filters are applied to the different color-layers, the color information is not lost, but incorporated in the feature layers. 
+
+ 
+
+
