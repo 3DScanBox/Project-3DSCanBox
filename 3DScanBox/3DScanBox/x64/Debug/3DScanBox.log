@@ -1,2 +1,6 @@
 ﻿  3DScanBox.cpp
+c:\users\lucho\onedrive\dokumente\github\project-3dscanbox\3dscanbox\3dscanbox\3dscanbox.cpp(286): warning C4267: "+=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+c:\users\lucho\onedrive\dokumente\github\project-3dscanbox\3dscanbox\3dscanbox\3dscanbox.cpp(292): warning C4267: "+=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+c:\users\lucho\onedrive\dokumente\github\project-3dscanbox\3dscanbox\3dscanbox\3dscanbox.cpp(298): warning C4267: "+=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+c:\users\lucho\onedrive\dokumente\github\project-3dscanbox\3dscanbox\3dscanbox\3dscanbox.cpp(316): warning C4244: "Argument": Konvertierung von "double" in "float", möglicher Datenverlust
   3DScanBox.vcxproj -> C:\Users\Lucho\OneDrive\Dokumente\GitHub\Project-3DSCanBox\3DScanBox\x64\Debug\3DScanBox.exe
